@@ -1,0 +1,124 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Tiro+Devanagari+Marathi&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    height: 40px;
+    background-color: rgb(246, 134, 54);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+
+
+}
+
+nav ul {
+    list-style: none;
+
+}
+
+.game-container {
+   
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+}
+
+#btn{
+    margin-top:40px;
+    margin-left:30%;
+    background-color: chartreuse;
+    font-size: 2rem;
+    /* border-radius: 20%; */
+}
+#btn2{
+    margin-top:40px;
+    margin-left:30%;
+    background-color: rgb(205, 58, 32);
+    font-size: 2rem;
+    /* border-radius: 20%; */
+}
+
+
+.box {
+    border: 2px solid;
+    font-size: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.box:hover {
+    background-color: rgb(219, 211, 208);
+}
+
+.info{
+    font-size: 2rem;
+    background-color: rgb(178, 205, 196);
+    
+}
+
+.game-info {
+    font-size: 1.5rem;
+    padding: 0 45px;
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-family: 'Tiro Devanagari Marathi', serif;
+}
+
+.imgbox img{
+    /* display: none; */
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.rmborder-abv{
+    border-top: 0;
+}
+.rmborder-blw{
+    border-bottom: 0;
+}
+.rmborder-corner{
+    border-left: 0;
+    border-right: 0;
+}
+
+.read-only{
+    pointer-events: none; /* Prevents mouse events from interacting with the element */
+    user-select: none; /* Prevents text selection */
+    touch-events: none; /* Prevents touch events */
+    -webkit-touch-callout: none; /* Prevents the callout (iOS) */
+}
+@media screen and (max-width: 800px)
+{
+    .game-container{
+        flex-wrap: wrap;
+    }
+    .container2{
+        flex-wrap: wrap;
+        margin-right: 30%;
+    }
+    .game-info{
+        margin-top: 34px;
+    }
+    .game-info h2{
+        font-size: 1.5rem;
+    }
+    .container { 
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+}
